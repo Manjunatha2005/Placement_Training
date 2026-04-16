@@ -1,0 +1,32 @@
+{
+  "name": "placement-platform-frontend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.21.0",
+    "axios": "^1.6.2",
+    "recharts": "^2.10.3",
+    "@codemirror/lang-javascript": "^6.2.1",
+    "@codemirror/lang-python": "^6.1.3",
+    "@codemirror/lang-java": "^6.0.1",
+    "@codemirror/lang-cpp": "^6.0.2",
+    "@codemirror/theme-one-dark": "^6.1.2",
+    "@uiw/react-codemirror": "^4.21.21",
+    "react-markdown": "^9.0.1",
+    "remark-gfm": "^4.0.0",
+    "react-hot-toast": "^2.4.1",
+    "date-fns": "^3.0.6",
+    "lucide-react": "^0.303.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.0.8"
+  }
+}

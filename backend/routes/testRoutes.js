@@ -1,0 +1,10 @@
+const express = require('express');
+const router = express.Router();
+const { getTests, getTest, submitTest, createTest, getMyResults } = require('../controllers/testController');
+const { protect, adminOnly } = require('../middleware/authMiddleware');
+router.get('/', protect, getTests);
+router.get('/my-results', protect, getMyResults);
+router.get('/:id', protect, getTest);
+router.post('/', protect, adminOnly, createTest);
+router.post('/:id/submit', protect, submitTest);
+module.exports = router;

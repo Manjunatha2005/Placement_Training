@@ -1,0 +1,11 @@
+const express = require('express');
+const router = express.Router();
+const { getProblems, getProblem, runCode, submitCode, createProblem, getMySubmissions } = require('../controllers/codingController');
+const { protect, adminOnly } = require('../middleware/authMiddleware');
+router.get('/', protect, getProblems);
+router.get('/my-submissions', protect, getMySubmissions);
+router.get('/:id', protect, getProblem);
+router.post('/run', protect, runCode);
+router.post('/:id/submit', protect, submitCode);
+router.post('/', protect, adminOnly, createProblem);
+module.exports = router;
